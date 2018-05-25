@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery-persist.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function() {
+				jQuery('input,select,textarea').persist();
+			});
+		</script>
+		<style type="text/css">
+			body {
+				padding:3em;
+				font-family:sans-serif;
+			}
+			input[type=text],textarea,select { width:25%; }
+		</style>
+	</head>
+	<body>
+		<h1>jQuery-persist - demo 2</h1>
+		That's right - stuff persists on other pages, too.
+		Based on the form elements' name and the context 
+		passed in the constructor options.
+		<hr/>
+		<form>
+			<input type="text" name="test1" /><br/>
+			<textarea name="test5">six..</textarea><br/>
+			<select name="test2">
+				<option>3</option>
+				<option>4</option>
+			</select><br/>
+			<select name="test17" multiple="multiple">
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+				<option>nine</option>
+			</select><br/>
+			<input type="radio" name="test7" value="1" />1
+			<input type="radio" name="test7" value="2" />2
+			<input type="radio" name="test7" value="3" />3<br/>
+			<input type="checkbox" name="test8" value="1" />1
+			<input type="checkbox" name="test8" value="2" />2
+			<input type="checkbox" name="test8" value="3" />3
+		</form>
+		<hr/>
+		201203*pike
+	</body>
+</html>
